@@ -42,7 +42,7 @@ pipeline {
 			      traceLevel: "None",
          		      orchestratorAddress: "OrchestratorUrl",
                               orchestratorTenant: "tenant name",
-                              credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “credentialsId”]
+                              credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'credentialsId']
 			)
 	            }
 	        }
