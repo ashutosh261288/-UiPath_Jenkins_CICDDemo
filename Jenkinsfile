@@ -40,9 +40,9 @@ pipeline {
 	                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 	                      useOrchestrator: false,          
 			      traceLevel: "None",
-         		      orchestratorAddress: "OrchestratorUrl",
-                              orchestratorTenant: "tenant name",
-                              credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'credentialsId']
+         		      orchestratorAddress: "",
+                              orchestratorTenant: "",
+                              credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: '']
 			)
 	            }
 	        }
