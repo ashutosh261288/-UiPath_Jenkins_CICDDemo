@@ -11,7 +11,7 @@ pipeline {
 	        UIPATH_ORCH_LOGICAL_NAME = "tangentiainc"
 	        UIPATH_ORCH_TENANT_NAME = "TangentiaDev"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
-		UIPATH_API_USER_KEY = "ApKpLB8qCCKbWCpb_A-ZdQCxWXZ9b1s7Bdy4jliiYSZwI"
+		UIPATH_API_USER_KEY = "21847b58-2416-4f83-9dd8-31f246b8f24e"
 	    }
 	
 
@@ -68,8 +68,8 @@ pipeline {
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'DEV',
-	                credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: '21847b58-2416-4f83-9dd8-31f246b8f24e'],
-	                //credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: "${UIPATH_API_USER_KEY}"),
+	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: '21847b58-2416-4f83-9dd8-31f246b8f24e'],
+	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: "${UIPATH_API_USER_KEY}"),
 			traceLevel: 'None',
 			entryPointPaths:''
 
