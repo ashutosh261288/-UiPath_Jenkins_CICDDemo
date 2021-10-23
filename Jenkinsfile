@@ -16,7 +16,6 @@ pipeline {
 
     stages {
 
-
         // Printing Basic Information
         stage('Preparing'){
             steps {
