@@ -47,7 +47,7 @@ pipeline {
          // Test Stages
         stage('Test') {
             steps {
-                echo 'Testing..the workflow......aashi 123'
+                echo 'Testing..the workflow......aashi'
             }
         }
 
